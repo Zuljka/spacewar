@@ -23,19 +23,19 @@ class Ship
     {
       if (key == 'w')
       {
-        y -=2;
+        y -=4;
       }
       if (key == 's')
       {
-        y +=2;
+        y +=4;
       }
       if (key == 'a')
       {
-        x -=2;
+        x -=4;
       }
       if (key == 'd')
       {
-        x +=2;
+        x +=4;
       }
       
     }
@@ -44,6 +44,7 @@ class Ship
   void render()
   {
     stroke(255);
+    strokeWeight(3);
     line(x - halfW, y + halfW, x, y - halfW);
     line(x, y - halfW, x + halfW, y + halfW);
     line(x + halfW, y + halfW, x, y);
